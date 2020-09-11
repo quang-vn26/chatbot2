@@ -24,20 +24,11 @@ restService.post("/chatbot", function (req, res) {
     && req.body.queryResult.parameters.acc_information) {
     var speech = " floor no 1 , Building no 1 , address";
   }
-    else var speech == 'rong'
+  
  
   return res.json({
-    fulfillmentText: "fulfillmentText",
-    fulfillmentMessages: [{
-      simpleResponses: {
-        simpleResponses: [{
-          "textToSpeech": "textToSpeech",
-          "displayText": speech
-        }]
-      }
-    }],
-    source: "acc_information"
-  });
+    fulfillmentText: speech
+    });
 });
 // const express = require('express')
 // // will use this later to send requests
