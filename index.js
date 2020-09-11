@@ -24,6 +24,7 @@ restService.post("/chatbot", function (req, res) {
     && req.body.queryResult.parameters.acc_information) {
     var speech = " floor no 1 , Building no 1 , address";
   }
+    else var speech == 'rong'
  
   return res.json({
     fulfillmentText: "fulfillmentText",
@@ -35,7 +36,7 @@ restService.post("/chatbot", function (req, res) {
         }]
       }
     }],
-    source: "webhook-sample"
+    source: "acc_information"
   });
 });
 // const express = require('express')
